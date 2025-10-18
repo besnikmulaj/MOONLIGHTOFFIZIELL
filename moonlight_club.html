@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Moonlight — Club Meckenheim</title>
+  <meta name="description" content="Moonlight Club Meckenheim — Partys every week. Reservierungen: 15233799326" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <style>
+    :root{--bg1:#05030a; --bg2:#0b0b1a; --accent:#8b5cf6; --accent2:#06b6d4; --accent3:#ff7b00; --text:#eaeef8; --muted:#b9b9c7; --card:rgba(255,255,255,0.04); --container:1200px}
+    *{box-sizing:border-box}
+    html,body{height:100%; margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,Arial; background:linear-gradient(180deg,var(--bg1),var(--bg2)); color:var(--text); -webkit-font-smoothing:antialiased}
+    a{color:var(--accent2)}
+    .wrap{max-width:var(--container); margin:0 auto; padding:2rem}
+    header{position:sticky; top:0; z-index:60; backdrop-filter:blur(6px)}
+    .nav{display:flex; align-items:center; justify-content:space-between; gap:1rem}
+    .logo{font-weight:900; letter-spacing:2px}
+    nav ul{display:flex; gap:1rem; list-style:none; margin:0; padding:0}
+    nav a{color:var(--muted); text-decoration:none; padding:.5rem .75rem; border-radius:10px}
+    nav a:hover{color:var(--text); background:rgba(139,92,246,0.06)}
+
+    /* HERO */
+    .hero{display:grid; grid-template-columns:1fr 420px; gap:2rem; align-items:center; min-height:74vh; padding:3rem 0}
+    h1{font-size:3.1rem; margin:0 0 .6rem}
+    .lead{color:var(--muted); margin-bottom:1rem}
+    .cta{display:flex; gap:.75rem}
+    .btn{display:inline-flex; align-items:center; gap:.6rem; padding:.9rem 1.2rem; border-radius:12px; font-weight:700; text-decoration:none}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent2)); color:#041024}
+    .btn-ghost{background:transparent; border:1px solid rgba(255,255,255,0.04); color:var(--text)}
+
+    /* HERO CARD */
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius:14px; padding:1.2rem; border:1px solid rgba(255,255,255,0.04)}
+    .tag{display:inline-block; padding:.35rem .6rem; border-radius:999px; font-size:.8rem; background:linear-gradient(90deg, rgba(139,92,246,0.14), rgba(6,182,212,0.06)); color:var(--text)}
+
+    section{padding:3rem 0}
+    .section-title{font-size:1.5rem; margin:0 0 1rem}
+    .grid{display:grid; gap:1rem}
+    .cards{grid-template-columns:repeat(3,1fr)}
+    .card{background:var(--card); padding:1rem; border-radius:12px; border:1px solid rgba(255,255,255,0.03)}
+    .muted{color:var(--muted)}
+
+    /* MENU */
+    .menu{display:grid; grid-template-columns:repeat(2,1fr); gap:1rem}
+    .menu-category{background:rgba(255,255,255,0.02); padding:1rem; border-radius:10px}
+    .menu-item{display:flex; justify-content:space-between; padding:.45rem 0; border-bottom:1px dashed rgba(255,255,255,0.02)}
+
+    /* VIP */
+    .vip-grid{display:grid; grid-template-columns:1fr 1fr; gap:1rem}
+
+    /* GALLERY */
+    .gallery{display:grid; grid-template-columns:repeat(3,1fr); gap:8px}
+    .gallery img{width:100%; height:180px; object-fit:cover; border-radius:10px}
+
+    /* EVENTS */
+    .events{display:flex; flex-direction:column; gap:.6rem}
+    .event{background:rgba(255,255,255,0.02); padding:.9rem; border-radius:10px; display:flex; justify-content:space-between; align-items:center}
+
+    /* TEAM & REVIEWS */
+    .team{display:flex; gap:1rem; align-items:center}
+    .avatar{width:72px; height:72px; border-radius:12px; object-fit:cover}
+
+    /* ORDER BUTTONS */
+    .order-buttons{display:flex; gap:1rem; flex-wrap:wrap}
+    .btn-lieferando{background:var(--accent3); color:white; padding:.8rem 1rem; border-radius:10px; font-weight:800; text-decoration:none}
+    .btn-ubereats{background:#0b0b0b; color:#7affb0; padding:.8rem 1rem; border-radius:10px; font-weight:800; text-decoration:none}
+
+    /* MAP */
+    .map{border-radius:10px; overflow:hidden; border:1px solid rgba(255,255,255,0.03)}
+
+    footer{border-top:1px solid rgba(255,255,255,0.03); padding:1.2rem 0; color:var(--muted); display:flex; justify-content:space-between; align-items:center; gap:1rem}
+
+    @media (max-width:980px){ .hero{grid-template-columns:1fr} .gallery{grid-template-columns:repeat(2,1fr)} .menu{grid-template-columns:1fr} .cards{grid-template-columns:1fr} .vip-grid{grid-template-columns:1fr} }
+    @media (max-width:560px){ .gallery{grid-template-columns:1fr} }
+
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <div class="nav">
+      <div class="logo">MOONLIGHT — <span style="color:var(--accent2)">Meckenheim</span></div>
+      <nav>
+        <ul>
+          <li><a href="#about">Über</a></li>
+          <li><a href="#programm">Events</a></li>
+          <li><a href="#menu">Speisen & Getränke</a></li>
+          <li><a href="#vip">VIP</a></li>
+          <li><a href="#gallery">Galerie</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <h1>Moonlight Club — Meckenheim</h1>
+        <p class="lead">Die Nr.1 Adresse für Nightlife in Meckenheim — jede Woche Partys, lokale & Gast‑DJs, leckere Drinks und entspannte Areas. Reservierungen: <strong><a href="tel:15233799326">15233799326</a></strong></p>
+        <div class="cta">
+          <a class="btn btn-primary" href="tel:15233799326">Tisch reservieren</a>
+          <a class="btn btn-ghost" href="#programm">Programm</a>
+        </div>
+        <p class="muted" style="margin-top:12px">Öffnungszeiten: Do 18:00–00:00 · Fr/Sa 19:00–04:00 · Eintritt frei (VIP kostenpflichtig)</p>
+      </div>
+
+      <aside class="hero-card">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem">
+          <div>
+            <div class="tag">Heute offen</div>
+            <h3 style="margin:.6rem 0 0">Club Highlights</h3>
+            <p class="muted">Jeden Samstag: große Party mit Gast‑DJs, Lichtshow & Specials. VIP oben: 40€ (kein DJ‑Blick) — VIP unten: 55€ (Blick auf DJ). Beide VIPs enthalten einen kostenlosen Cocktail.</p>
+          </div>
+          <div style="text-align:right">
+            <div style="font-weight:800">MOONLIGHT</div>
+            <div class="muted">Meckenheim</div>
+            <div style="margin-top:.6rem"><a class="btn btn-ghost" href="#vip">VIP buchen</a></div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2 class="section-title">Über uns</h2>
+      <p class="muted">Moonlight wurde 20XX gegründet mit der Idee, hochwertige Clubkultur nach Meckenheim zu bringen. Unser Konzept verbindet Lounge‑Atmosphäre mit energiegeladenen Dancefloors. Wir legen Wert auf gute Soundsysteme, kreative Drinks und sichere, freundliche Abende.</p>
+      <div style="display:grid; grid-template-columns:1fr 320px; gap:1rem; margin-top:1rem">
+        <div>
+          <h3 style="margin-top:0">Unser Anspruch</h3>
+          <p class="muted">Musikauswahl von House über HipHop bis zu clubtauglichen Charts — curated von unseren Residents und eingeladenen DJs. Regelmäßige Themenabende, Gastacts und besondere Specials machen jeden Besuch einzigartig.</p>
+          <h4 style="margin-bottom:6px">Angebote</h4>
+          <ul class="muted">
+            <li>Eintritt: frei</li>
+            <li>VIP oben: 40€/Person — ruhiger Sitzbereich (kein DJ‑Blick)</li>
+            <li>VIP unten: 55€/Person — privater Bereich mit DJ‑Blick & Extras</li>
+            <li>Beide VIP‑Optionen: 1 kostenloser Cocktail pro Person</li>
+          </ul>
+        </div>
+        <div class="map">
+          <!-- Placeholder Google Map iframe — bitte mit korrekter Adresse ersetzen -->
+          <iframe width="100%" height="320" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.0000000000005!2d7.000000000000001!3d50.666666666666664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDQwJzAwLjAiTiA3wrAwJzAwLjAiVw!5e0!3m2!1sde!2sde!4v0000000000000" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMM / EVENTS -->
+    <section id="programm">
+      <h2 class="section-title">Programm & Events</h2>
+      <div class="events">
+        <div class="event"><div><strong>Donnerstag — Chill Lounge</strong><div class="muted">18:00 – 00:00</div></div><div class="muted">Entspannte Beats, Specials an der Bar</div></div>
+        <div class="event"><div><strong>Freitag — Club Night</strong><div class="muted">19:00 – 04:00</div></div><div class="muted">Charts, House & Guest DJs</div></div>
+        <div class="event"><div><strong>Samstag — Saturday Party</strong><div class="muted">19:00 – 04:00</div></div><div class="muted">Headliner/DJ & große Lichtshow — Eintritt frei</div></div>
+      </div>
+      <p class="muted" style="margin-top:.6rem">Specials: Ladies Night, Geburtstags-Arrangements, Themen‑Events. Kontaktiere uns für Private‑Bookings und Geburtstagsangebote.</p>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu">
+      <h2 class="section-title">Speisen & Getränke</h2>
+      <p class="muted">Unsere Karte wurde so gestaltet, dass sie zu jeder Stimmung passt — von kleinen Snacks bis zu kreativen Cocktails.</p>
+      <div class="menu" style="margin-top:1rem">
+        <div class="menu-category">
+          <h4>Cocktails</h4>
+          <div class="menu-item"><div>Mojito</div><div class="muted">8,50€</div></div>
+          <div class="menu-item"><div>Cosmopolitan</div><div class="muted">9,50€</div></div>
+          <div class="menu-item"><div>Long Island</div><div class="muted">11,00€</div></div>
+          <div class="menu-item"><div>Gin Tonic</div><div class="muted">7,50€</div></div>
+        </div>
+        <div class="menu-category">
+          <h4>Snacks & Small Plates</h4>
+          <div class="menu-item"><div>MoonBurger</div><div class="muted">8,50€</div></div>
+          <div class="menu-item"><div>Pommes (Large)</div><div class="muted">4,00€</div></div>
+          <div class="menu-item"><div>Nacho Plate</div><div class="muted">5,50€</div></div>
+          <div class="menu-item"><div>Chicken Wings</div><div class="muted">7,00€</div></div>
+        </div>
+
+        <div class="menu-category">
+          <h4>Longdrinks & Shots</h4>
+          <div class="menu-item"><div>Vodka Lemon</div><div class="muted">6,50€</div></div>
+          <div class="menu-item"><div>Tequila Shot</div><div class="muted">3,00€</div></div>
+          <div class="menu-item"><div>Rum Cola</div><div class="muted">6,50€</div></div>
+        </div>
+        <div class="menu-category">
+          <h4>Biere & Softdrinks</h4>
+          <div class="menu-item"><div>Pils 0,3l</div><div class="muted">3,20€</div></div>
+          <div class="menu-item"><div>Weizen 0,5l</div><div class="muted">4,20€</div></div>
+          <div class="menu-item"><div>Softdrink</div><div class="muted">2,80€</div></div>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:.75rem">Hinweis: Du kannst hier die komplette Karte 1:1 einfügen — ich habe das Layout für viele Kategorien vorbereitet.</p>
+    </section>
+
+    <!-- VIP -->
+    <section id="vip">
+      <h2 class="section-title">VIP‑Buchung & Optionen</h2>
+      <div class="vip-grid">
+        <div class="card">
+          <h3>VIP OBEN — 40 € / Person</h3>
+          <p class="muted">Ruhiger Sitzbereich oben. Kein direkter Blick auf den DJ — perfekt, wenn ihr ungestört feiern wollt.</p>
+          <ul class="muted">
+            <li>Inklusive: 1 gratis Cocktail pro Person</li>
+            <li>Reservierter Bereich & Garderobe</li>
+            <li>Servicepersonal auf Anfrage</li>
+          </ul>
+          <p style="margin-top:.6rem"><strong>Buchen:</strong> Ruf uns an <a href="tel:15233799326">15233799326</a></p>
+        </div>
+        <div class="card">
+          <h3>VIP UNTEN — 55 € / Person</h3>
+          <p class="muted">Privater Bereich am Floor mit direktem Blick auf den DJ — ideal für Gruppen, die mittendrin sein wollen.</p>
+          <ul class="muted">
+            <li>Inklusive: 1 gratis Cocktail pro Person</li>
+            <li>Priorisierter Service & Extras</li>
+            <li>Privater Bereich mit Sicht auf DJ</li>
+          </ul>
+          <p style="margin-top:.6rem"><strong>Buchen:</strong> Ruf uns an <a href="tel:15233799326">15233799326</a></p>
+        </div>
+      </div>
+    </section>
+
+
+      <p class="muted" style="margin-top:.6rem">Folge uns: <a href="https://www.instagram.com/moonlight.meckenheim" target="_blank">@moonlight.meckenheim</a></p>
+    </section>
+
+    <!-- ORDER -->
+    <section id="order">
+      <h2 class="section-title">Online bestellen</h2>
+      <p class="muted">Bestelle unsere Speisen direkt über die folgenden Dienste (Links als Platzhalter — später durch echte Shop‑Links ersetzen).</p>
+      <div class="order-buttons">
+        <a class="btn-lieferando" href="#lieferando" target="_blank">🍔 Bestellen bei Lieferando</a>
+        <a class="btn-ubereats" href="#ubereats" target="_blank">🥗 Bestellen bei Uber Eats</a>
+      </div>
+    </section>
+
+    <!-- TEAM & REVIEWS -->
+    <section id="team">
+      <h2 class="section-title">Team & Resident DJs</h2>
+      <div style="display:flex; gap:1rem; flex-wrap:wrap">
+        <div style="flex:1; min-width:220px" class="card">
+          <h4>Resident DJs</h4>
+          <p class="muted">DJ Luna — House & Deep, DJ Kato — HipHop & RnB, Guest DJs wechselnd jede Woche.</p>
+        </div>
+        <div style="flex:1; min-width:220px" class="card">
+          <h4>Das Team</h4>
+          <p class="muted">Barcrew, Eventmanager & Security sorgen dafür, dass alles glatt läuft.</p>
+        </div>
+      </div>
+      <h3 style="margin-top:1rem">Gästemeinungen</h3>
+      <div class="cards" style="margin-top:.6rem">
+        <div class="card">"Beste Party in Meckenheim! – Lena"</div>
+        <div class="card">"Top DJs & Atmosphäre – Marc"</div>
+        <div class="card">"Super Service & Getränke – Anna"</div>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt">
+      <h2 class="section-title">Kontakt & Anfahrt</h2>
+      <div style="display:grid; grid-template-columns:1fr 320px; gap:1rem; align-items:start">
+        <div>
+          <p class="muted"><strong>Adresse:</strong> (Adresse einfügen)</p>
+          <p class="muted"><strong>Telefon:</strong> <a href="tel:15233799326">15233799326</a></p>
+          <p class="muted"><strong>Instagram:</strong> <a href="https://www.instagram.com/moonlight.meckenheim" target="_blank">@moonlight.meckenheim</a></p>
+          <p class="muted">Öffnungszeiten: Do 18:00–00:00 · Fr/Sa 19:00–04:00</p>
+        </div>
+        <div class="map">
+          <iframe width="100%" height="260" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.0000000000005!2d7.000000000000001!3d50.666666666666664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDQwJzAwLjAiTiA3wrAwJzAwLjAiVw!5e0!3m2!1sde!2sde!4v0000000000000" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="wrap">
+    <div>© <strong>Moonlight</strong> — Meckenheim | Eintritt frei · VIP oben 40€/p · VIP unten 55€/p</div>
+    <div class="muted">Reservierung: <a href="tel:15233799326">15233799326</a> · Instagram: <a href="https://www.instagram.com/moonlight.meckenheim" target="_blank">@moonlight.meckenheim</a></div>
+  </footer>
+
+  <script>
+    // small interactivity: lightbox for gallery
+    document.addEventListener('click', function(e){
+      if(e.target.matches('.gallery img')){
+        const src = e.target.src; const overlay = document.createElement('div');
+        overlay.style.position='fixed'; overlay.style.inset=0; overlay.style.background='rgba(0,0,0,0.85)'; overlay.style.display='flex'; overlay.style.alignItems='center'; overlay.style.justifyContent='center'; overlay.style.zIndex=9999;
+        const img = document.createElement('img'); img.src = src; img.style.maxWidth='90%'; img.style.maxHeight='90%'; img.style.borderRadius='10px'; overlay.appendChild(img);
+        overlay.addEventListener('click', ()=>document.body.removeChild(overlay)); document.body.appendChild(overlay);
+      }
+    });
+
+    // smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{ const id = a.getAttribute('href'); if(id.length>1){ e.preventDefault(); document.querySelector(id).scrollIntoView({behavior:'smooth', block:'start'}) }});
+    });
+
+    // dynamic "open" tag based on time (Europe/Berlin assumed)
+    (function(){ try{ const now = new Date(); const h = now.getHours(); const tag = document.querySelector('.tag'); if(!tag) return; if(h>=19 || h<3) tag.textContent='Jetzt offen'; else if(h>=15) tag.textContent='Heute Abend'; else tag.textContent='Öffnet heute'; }catch(e){} })();
+  </script>
+</body>
+</html>
+<
